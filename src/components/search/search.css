@@ -1,0 +1,13 @@
+.shorten-bg{
+    background-image: url(../../assets/bg-shorten-desktop.svg)
+}
+
+.boost-bg{
+    background-image: url(../../assets/bg-boost-desktop.svg)
+}
+
+@media (max-width: 639px) {
+    .shorten-bg{
+        background-image: url(../../assets/bg-shorten-mobile.svg)
+    }
+}
