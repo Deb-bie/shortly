@@ -91,12 +91,12 @@ const Search = () => {
                         
                         urls.map((item,id)=> (
                             <div key={id} className=" w-[100%] h-[100%] py-6 px-4 gap-y-4 flex 4xs:flex-col sm:flex-row justify-between content-center items-center bg-white shadow-2xl " >
-                                <span className="w-[40%] flex justify-center">{item.origUrl}</span>
+                                <span className="4xs:w-[100%] sm:w-[40%] inline-block overflow-hidden text-ellips ">{item.origUrl}</span>
 
-                                <span className="w-[30%] flex justify-center ">{item.shortUrl}</span>
+                                <a href={item.origUrl} target="_blank" className="sm:w-[30%] 4xs:w-[100%] inline-block overflow-hidden text-ellipsis text-blue-800 underline ">{item.shortUrl}</a>
 
                                 <div className="4xs:w-[100%] sm:w-[20%] gap-y-4 flex flex-col justify-between ">
-                                    <button className="px-4  py-2 bg-[#d3f3f3] text-white outline-none rounded-[5px] ">Copy</button>
+                                    {/* <button className="px-4  py-2 bg-[#d3f3f3] text-white outline-none rounded-[5px] ">Copy</button> */}
 
                                     <button onClick={()=>deleteUrl(item._id)} className="px-4 py-2 bg-rose-700 text-white outline-none rounded-[5px] " >Delete</button>
                                 </div>
