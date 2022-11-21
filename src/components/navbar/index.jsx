@@ -23,19 +23,11 @@ const Navbar = () => {
                 <img src={Logo} alt="logo"/>
 
                 <div className="4xs:ml-0 sm:ml-12 4xs:hidden sm:flex flex-row justify-between items-center content-center text-[#bfbfbf] " >
-                    <NavLink 
-                        className="mr-4"
-                        style={({ isActive }) => isActive ? activeStyle : undefined}
-                        to="#">Features</NavLink>
+                    <NavLink className="mr-4 text-[#bfbfbf]" to="#">Features</NavLink>
 
-                    <NavLink 
-                        className="mr-4"
-                        style={({ isActive }) => isActive ? activeStyle : undefined}
-                        to="#">Pricing</NavLink>
+                    <NavLink className="mr-4 text-[#bfbfbf]" to="#">Pricing</NavLink>
 
-                    <NavLink 
-                        style={({ isActive }) => isActive ? activeStyle : undefined}
-                    to="#">Resources</NavLink>
+                    <NavLink className="text-[#bfbfbf]" to="#">Resources</NavLink>
                 </div>
             </div>
 

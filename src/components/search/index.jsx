@@ -15,16 +15,11 @@ const Search = () => {
     const onSubmit = e => {
       e.preventDefault();
   
-      if (!url) {
-        alert("please enter something");
-        return;
-      }
-  
       axios
         .post
         (
-            // "http://localhost:5555/",
-            "https://shortly-api-b5u2.onrender.com/", 
+            "http://localhost:5555/",
+            // "https://shortly-api-b5u2.onrender.com/", 
         { origUrl: url })
         .then(res => {
           console.log(res.data);
@@ -48,9 +43,6 @@ const Search = () => {
     }, [urls]);
 
     const deleteUrl = async (id) => {
-        // console.log(id)
-        // console.log(`http://localhost:5555/${id}`)
-
         // const result = await axios.delete(`http://localhost:5555/${id}`)
         const result = await axios.delete(`https://shortly-api-b5u2.onrender.com/${id} `);
 
@@ -93,7 +85,7 @@ const Search = () => {
                             <div key={id} className=" w-[100%] h-[100%] py-6 px-4 gap-y-4 flex 4xs:flex-col sm:flex-row justify-between content-center items-center bg-white shadow-2xl " >
                                 <span className="4xs:w-[100%] sm:w-[40%] inline-block overflow-hidden text-ellips ">{item.origUrl}</span>
 
-                                <a href={item.origUrl} target="_blank" className="sm:w-[30%] 4xs:w-[100%] inline-block overflow-hidden text-ellipsis text-blue-800 underline ">{item.shortUrl}</a>
+                                <a href={item.origUrl} target="_blank" className="sm:w-[30%] 4xs:w-[100%] inline-block overflow-hidden text-ellipsis text-blue-800 underline ">https://shortly-api-b5u2.onrender.com/{item.shortUrl}</a>
 
                                 <div className="4xs:w-[100%] sm:w-[20%] gap-y-4 flex flex-col justify-between ">
                                     {/* <button className="px-4  py-2 bg-[#d3f3f3] text-white outline-none rounded-[5px] ">Copy</button> */}
