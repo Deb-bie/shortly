@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="4xs:w-[100%] sm:w-[40%] h-[100%] flex flex-col justify-between content-center 4xs:items-center sm:items-start  ">
                 <h1 className="4xs:text-2xl sm:text-5xl 2xl:text-7xl font-black " >More than just shorter links</h1>
                 <p className="text-lg mt-4 flex flex-row justify-start " >Build your brand's recognition and get detailed insights on how your links are performing</p>
-                <button className="4xs:w-[50%] sm:w-[50%]  mt-6 px-4 py-2 rounded-[18px] bg-[#2acfcf] text-white ">Get Started</button>
+                <button className="4xs:w-[50%] sm:w-[40%]  mt-6 px-4 py-2 rounded-[18px] bg-[#2acfcf] text-white hover:scale-90 hover:duration-700 ">Get Started</button>
             </div>
 
             <div className="4xs:w-[100%] sm:w-[50%] ">

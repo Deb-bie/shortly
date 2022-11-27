@@ -32,10 +32,10 @@ const Navbar = () => {
             </div>
 
 
-            <div className="4xs:hidden sm:flex flex-row content-center items-center ">
-                <button className="text-[#bfbfbf]">Login</button>
+            <div className="4xs:hidden gap-x-12 sm:flex flex-row content-center items-center ">
+                <button className="text-[#bfbfbf] hover:bg-[#2acfcf] hover:px-4 hover:py-2 hover:rounded-[18px] hover:text-white  ">Login</button>
 
-                <button className="ml-4 px-4 py-2 rounded-[18px] bg-[#2acfcf] text-white ">Sign Up</button>
+                <button className="ml-4 px-4 py-2 rounded-[18px] bg-[#2acfcf] text-white hover:border-2 hover:border-[#2acfcf] hover:bg-white  hover:text-black ">Sign Up</button>
             </div>
 
             <div onClick={()=> handleMobile()} className="4xs:flex sm:hidden">
@@ -53,10 +53,12 @@ const Navbar = () => {
                             <NavLink className="text-xl font-bold text-white my-8" to="#">Resources</NavLink>
                         </div>
                         
-                        <NavLink className="text-xl font-bold text-white mt-8 flex flex-row justify-center content-center items-center" to="#">Login</NavLink>
+                        <NavLink className="text-xl font-bold text-white mt-8 flex flex-row justify-center content-center items-center  " to="#">
+                            Login
+                        </NavLink>
 
                         <div className="flex flex-row justify-center mt-8  ">
-                            <button className="w-[70%] flex flex-row justify-center content-center items-center px-4 py-2 rounded-[18px] bg-[#2acfcf] text-white">Sign Up</button>
+                            <button className="w-[70%] flex flex-row justify-center content-center items-center px-4 py-2 rounded-[18px] bg-[#2acfcf] text-white ">Sign Up</button>
                         </div>
                     </div>
                 </div>

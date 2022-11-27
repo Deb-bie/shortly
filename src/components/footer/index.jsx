@@ -8,7 +8,7 @@ import Instagram from "../../assets/icon-instagram.svg"
 
 const Footer = () => {
   return (
-    <div className="w-[100%] h-[100%] 4xs:px-4 sm:px-0 text-white bg-[#35323e] overflow-hidden ">
+    <div className="w-[100%] h-[100%] 4xs:px-12 sm:px-0 text-white bg-[#35323e] overflow-hidden ">
         <div className="w-[100%] h-[100%] py-12 gap-4 flex flex-wrap 4xs:flex-col sm:flex-row justify-evenly">
             <div className="4xs:w-[100%] sm:w-[30%] flex 4xs:items-center sm:items-start justify-center ">
                 <img src={Logo} alt="logo" className="w-[100px] h-auto object-contain  " />
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="4xs:w-[100%] sm:w-[10%] flex flex-wrap flex-row justify-between "  >
+            <div className="4xs:w-[100%] sm:w-[10%] gap-6 flex flex-wrap flex-row justify-between "  >
                 <img src={Facebook} alt="facebook"  className="w-[30px] h-auto object-contain text-pink-900 " />
                 <img src={Twitter} alt="twitter" className="w-[30px] h-auto object-contain" />
                 <img src={Pinterest} alt="pinterest" className="w-[30px] h-auto object-contain" />
